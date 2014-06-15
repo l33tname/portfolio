@@ -3,4 +3,3 @@ config.yaml
 bin/
 .bundle/
 vendor/
-Gemfile.lock

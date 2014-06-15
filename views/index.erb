@@ -1,0 +1,42 @@
+<style type="text/css">
+  .projekt{ margin-bottom: 40px;}
+  h1 { margin-bottom: 5px; }
+  .info-list { font-size: 24px; margin-bottom: 10px; }
+  .info-list img:first-child { margin-left: 0px; }
+  .info-list img {vertical-align:middle; margin-left: 20px; }
+  .pure-badge {
+      padding: 0.35em 0.9em 0.35em;
+      background-color: #9D988E;
+      color: #fff;
+      display: inline-block;
+      font-size: 11.844px;
+      font-weight: bold;
+      line-height: 1.2em;
+      vertical-align: baseline;
+      white-space: nowrap;
+      border-radius: 20px;
+      margin: 0.2em;
+      background-color: #9D988E;
+      vertical-align:middle;
+  }
+  #description { margin-bottom: 10px; font-size: 24px; font-style: italic; }
+</style>
+
+<% for project in projects %>
+  <div style="padding-top:10px;">
+    <div class="pure-u-1-5"></div>
+    <div class="pure-u-3-5 projekt">
+      <h1><%= project["title"] %></h1>
+      <p id="description"><%= project["description"] %></p>
+      <div class="info-list">
+       <img src="/icon/world-24.png" title='Web link'> <a href="http://<%= project["link"] %>"><%= project["link"] %></a>
+       <% if  project["git"] != nil %>
+        <img src="/icon/github-24.png" title='Git link'> <a href="http://<%= project["git"] %>"><%= project["git"] %></a>
+       <% end %>
+       <img src="/icon/wrench-24.png" title='Technologien'> <% for tech in project["technologies"] %><span class="pure-badge"><%= tech %></span><% end %>
+      </div>
+      <img src="/projectImages/<%= project["image"]%>" />
+    </div>
+    <div class="pure-u-1-5"></div>
+  </div>
+<% end %>

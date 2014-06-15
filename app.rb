@@ -1,13 +1,24 @@
 require "sinatra"
-require_relative "model.rb"
+require "yaml"
+
+def loadAllProjects
+  $AllProjects = Array.new
+
+  path = File.expand_path("projecte/*.yaml", File.dirname(__FILE__))
+
+  Dir.glob(path) do |project|
+    parsedProject = YAML.load_file(project)
+    $AllProjects << parsedProject if parsedProject["published"]
+  end
+end
 
 configure do
   set :erb, :layout => :'meta-layout/layout'
-  #set :erb, :locals => {:title => "", :tagline => ''}
+  set :erb, :locals => {:title => "Portfolio", :tagline => "Build software with <3"}
 
-  #AppConfig = YAML.load_file(File.expand_path("config.yaml", File.dirname(__FILE__)))
+  loadAllProjects
 end
 
 get "/" do
-  erb :index
+  erb :index, :locals => { :projects => $AllProjects }
 end
