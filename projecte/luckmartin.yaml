@@ -1,0 +1,12 @@
+---
+published: true
+title: A simple CMS for Music
+description: |
+  A CSM which has a nice Soundcloud integration and is slim and fast. 
+  I've build this site for a friend who is musician. 
+image: luckymartin.png
+technologies: ["ruby", "sinatra", "mongomapper"]
+role: ["developer", "designer"]
+git: git.io/cNsslw
+#link: luckymartin.ch not online right now
+---

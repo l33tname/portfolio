@@ -1,0 +1,12 @@
+---
+published: true
+title: Personal website of Flohrian Mauchle
+description: |
+  I was anoyed by <a href="https://twitter.com/FlohEinstein">FlohEinstein</a>  primary website. And I 
+  thought it would be nice to build something with AngularJS. So I just build a new page with AngularJS.
+image: floh.png
+screenshots: ["/div/bla.png", "/div/bla.png", "/div/bla.png"]
+technologies: ["php", "angularJS"]
+role: ["developer", "designer"]
+link: mauchle.name/landingpage
+---

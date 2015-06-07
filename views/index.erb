@@ -20,22 +20,25 @@
       vertical-align:middle;
   }
   #description { margin-bottom: 10px; font-size: 24px; font-style: italic; }
+  .projectIMG { -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C; }
 </style>
 
 <% for project in projects %>
   <div style="padding-top:10px;">
     <div class="pure-u-1-5"></div>
-    <div class="pure-u-3-5 projekt">
+    <div class="pure-u-3-5 project">
       <h1><%= project["title"] %></h1>
       <p id="description"><%= project["description"] %></p>
       <div class="info-list">
-       <img src="/icon/world-24.png" title='Web link'> <a href="http://<%= project["link"] %>"><%= project["link"] %></a>
-       <% if  project["git"] != nil %>
-        <img src="/icon/github-24.png" title='Git link'> <a href="http://<%= project["git"] %>"><%= project["git"] %></a>
-       <% end %>
-       <img src="/icon/wrench-24.png" title='Technologien'> <% for tech in project["technologies"] %><span class="pure-badge"><%= tech %></span><% end %>
+        <% if not project["link"].nil? %>
+          <img src="/icon/world-24.png" title='Web link' /> <a href="http://<%= project["link"] %>"><%= project["link"] %></a>
+        <% end %>
+        <% if not project["git"].nil? %>
+          <img src="/icon/github-24.png" title='Git link' /> <a href="http://<%= project["git"] %>"><%= project["git"] %></a>
+        <% end %>
+        <img src="/icon/wrench-24.png" title='Technologien' /> <% for tech in project["technologies"] %><span class="pure-badge"><%= tech %></span><% end %>
       </div>
-      <img src="/projectImages/<%= project["image"]%>" />
+      <img class="projectIMG" src="/projectImages/<%= project["image"]%>" />
     </div>
     <div class="pure-u-1-5"></div>
   </div>
