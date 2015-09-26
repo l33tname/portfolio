@@ -8,5 +8,5 @@ image: luckymartin.png
 technologies: ["ruby", "sinatra", "mongomapper"]
 role: ["developer", "designer"]
 git: git.io/cNsslw
-#link: luckymartin.ch not online right now
+link: luckymartin.ch 
 ---
