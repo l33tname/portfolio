@@ -1,0 +1,12 @@
+---
+published: true
+title: Which food is better?
+description: |
+  I build this with <a href="https://twitter.com/optikfluffel">@optikfluffel</a>  at <a href="http://hackzurich.com/">hackzurich</a>. It's a little game where 
+  you compare food facts.
+image: whichfoodisbetter.png
+technologies: ["ruby", "sinatra", "mongomapper"]
+role: ["developer"]
+git: git.io/vnpjs
+link: which-food-is-better.fluffel.io
+---
