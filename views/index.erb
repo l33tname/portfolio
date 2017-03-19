@@ -1,5 +1,5 @@
 <style type="text/css">
-  .projekt{ margin-bottom: 40px;}
+  .project{ margin: 0 auto 40px auto; padding-top:10px;}
   h1 { margin-bottom: 5px; }
   .info-list { font-size: 24px; margin-bottom: 10px; }
   .info-list img:first-child { margin-left: 0px; }
@@ -24,8 +24,6 @@
 </style>
 
 <% for project in projects %>
-  <div style="padding-top:10px;">
-    <div class="pure-u-1-5"></div>
     <div class="pure-u-3-5 project">
       <h1><%= project["title"] %></h1>
       <p id="description"><%= project["description"] %></p>
@@ -40,6 +38,4 @@
       </div>
       <img class="projectIMG" src="/projectImages/<%= project["image"]%>" />
     </div>
-    <div class="pure-u-1-5"></div>
-  </div>
 <% end %>
