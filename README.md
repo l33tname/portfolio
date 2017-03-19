@@ -1,3 +1,5 @@
-#Project showcase
+Project showcase
+================
 
-icons: http://iconmonstr.com
+
+Icons: http://iconmonstr.com
