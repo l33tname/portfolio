@@ -8,5 +8,4 @@ image: floh.png
 screenshots: ["/div/bla.png", "/div/bla.png", "/div/bla.png"]
 technologies: ["php", "angularJS"]
 role: ["developer", "designer"]
-link: mauchle.name/landingpage
 ---
