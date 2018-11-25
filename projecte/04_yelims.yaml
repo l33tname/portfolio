@@ -1,0 +1,13 @@
+---
+published: false
+title: yelims. The most simple, emoji based social network.
+placed: top 30
+description: |
+  We build yelims at <a href="https://digitalfestival.ch/en/HACK/">hackzurich 2018</a>.
+  Which is the first proximity based emoji app! Where you can share your emotion.
+image: 
+technologies: ["JavaScript", "react-native", "python"]
+role: ["developer"]
+git: git.io/fpEIn
+link: randombenj.github.io/yelims/
+---
